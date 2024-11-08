@@ -1,0 +1,11 @@
+@Regression
+Feature: login functionality
+Background:
+  Given user should be login a page
+
+  @Login_Valid @Regression
+  Scenario: TC01_Valid_Login
+
+    When user enter the valid credentials and click on login button
+    Then user should be naviagte to home page
+    And user can see the logout link on right corner
